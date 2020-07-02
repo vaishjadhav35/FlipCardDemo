@@ -301,6 +301,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 img_card_12.setVisibility(View.INVISIBLE);
             }
 
+
             if (clickCount == 1) {
                 status++;
                 txtStatus.setText("Status: " + status);
@@ -309,7 +310,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 // int  sum=status+statusNew;
                 txtStatus.setText("Status: " + status);
             }
-
         } else {
 
             img_card_1.setImageResource(R.drawable.img_default);
@@ -326,12 +326,21 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             img_card_12.setImageResource(R.drawable.img_default);
 
 
-            if (clickCount == 1) {
+           /* if (clickCount == 1) {
                 clickCount = 2;
             } else if (clickCount == 2) {
                 clickCount = 1;
             }
+*/
 
+            if (clickCount == 1) {
+                status++;
+                txtStatus.setText("Status: " + status);
+            } else if (clickCount == 2) {
+                status++;
+                // int  sum=status+statusNew;
+                txtStatus.setText("Status: " + status);
+            }
         }
 
         img_card_1.setEnabled(true);
