@@ -22,12 +22,12 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     TextView txtStatus;
     Button btnRestart;
     ImageView img_card_1, img_card_2, img_card_3, img_card_4, img_card_5, img_card_6, img_card_7, img_card_8, img_card_9, img_card_10, img_card_11, img_card_12;
-    Integer[] cardArray = {101,102, 103, 104, 105, 106, 201, 202, 203, 204, 205, 206};
+    Integer[] cardArray = {101, 102, 103, 104, 105, 106, 201, 202, 203, 204, 205, 206};
     int card1, card2, card3, card4, card5, card6, card7, card8, card9, card10, card11, card12;
     int firstCard, secondCard;
     int clickedFirst, clickedSecond;
     int cardNo = 1;
-    int status = 0,statusNew=0;
+    int status = 0, statusNew = 0;
     int clickCount = 1;
 
     @Override
@@ -162,7 +162,19 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 doSomething(img_card_12, theCard11);
                 break;
             case R.id.btn_restart:
-                validateCards();
+                img_card_1.setVisibility(View.VISIBLE);
+                img_card_2.setVisibility(View.VISIBLE);
+                img_card_3.setVisibility(View.VISIBLE);
+                img_card_4.setVisibility(View.VISIBLE);
+                img_card_5.setVisibility(View.VISIBLE);
+                img_card_6.setVisibility(View.VISIBLE);
+                img_card_7.setVisibility(View.VISIBLE);
+                img_card_8.setVisibility(View.VISIBLE);
+                img_card_9.setVisibility(View.VISIBLE);
+                img_card_10.setVisibility(View.VISIBLE);
+                img_card_11.setVisibility(View.VISIBLE);
+                img_card_12.setVisibility(View.VISIBLE);
+                txtStatus.setText("Status: 0");
                 break;
         }
     }
@@ -201,7 +213,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             }
             cardNo = 2;
             clickedFirst = card;
-           img.setEnabled(false);
+            img.setEnabled(false);
         } else if (cardNo == 2) {
             secondCard = cardArray[card];
             if (secondCard > 200) {
@@ -293,31 +305,31 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 status++;
                 txtStatus.setText("Status: " + status);
             } else if (clickCount == 2) {
-                statusNew++;
-               // int  sum=status+statusNew;
-                txtStatus.setText("Status: " + statusNew);
+                status++;
+                // int  sum=status+statusNew;
+                txtStatus.setText("Status: " + status);
             }
 
         } else {
 
-            img_card_1.setImageResource(R.drawable.image);
-            img_card_2.setImageResource(R.drawable.image);
-            img_card_3.setImageResource(R.drawable.image);
-            img_card_4.setImageResource(R.drawable.image);
-            img_card_5.setImageResource(R.drawable.image);
-            img_card_6.setImageResource(R.drawable.image);
-            img_card_7.setImageResource(R.drawable.image);
-            img_card_8.setImageResource(R.drawable.image);
-            img_card_9.setImageResource(R.drawable.image);
-            img_card_10.setImageResource(R.drawable.image);
-            img_card_11.setImageResource(R.drawable.image);
-            img_card_12.setImageResource(R.drawable.image);
+            img_card_1.setImageResource(R.drawable.img_default);
+            img_card_2.setImageResource(R.drawable.img_default);
+            img_card_3.setImageResource(R.drawable.img_default);
+            img_card_4.setImageResource(R.drawable.img_default);
+            img_card_5.setImageResource(R.drawable.img_default);
+            img_card_6.setImageResource(R.drawable.img_default);
+            img_card_7.setImageResource(R.drawable.img_default);
+            img_card_8.setImageResource(R.drawable.img_default);
+            img_card_9.setImageResource(R.drawable.img_default);
+            img_card_10.setImageResource(R.drawable.img_default);
+            img_card_11.setImageResource(R.drawable.img_default);
+            img_card_12.setImageResource(R.drawable.img_default);
 
 
-            if(clickCount==1){
-                clickCount=2;
-            }else if(clickCount==2){
-                clickCount=1;
+            if (clickCount == 1) {
+                clickCount = 2;
+            } else if (clickCount == 2) {
+                clickCount = 1;
             }
 
         }
@@ -338,6 +350,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         checkEnd();
 
     }
+
     private void checkEnd() {
         if (img_card_1.getVisibility() == View.INVISIBLE &&
                 img_card_2.getVisibility() == View.INVISIBLE &&

@@ -17,7 +17,7 @@
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:layout_marginLeft="10dp"
-            android:src="@drawable/image"
+            android:src="@drawable/img_default"
             android:layout_marginTop="10dp"
             android:id="@+id/card_1">
 
@@ -28,7 +28,7 @@
             android:layout_marginLeft="10dp"
             android:layout_weight="1"
             android:layout_marginTop="10dp"
-            android:src="@drawable/image"
+            android:src="@drawable/img_default"
             android:id="@+id/card_2">
 
         </ImageView>
@@ -38,7 +38,7 @@
             android:layout_marginLeft="10dp"
             android:layout_marginTop="10dp"
             android:layout_weight="1"
-            android:src="@drawable/image"
+            android:src="@drawable/img_default"
             android:id="@+id/card_3">
         </ImageView>
     </LinearLayout>
@@ -56,7 +56,7 @@
             android:layout_marginTop="10dp"
             android:layout_marginBottom="10dp"
             android:layout_weight="1"
-            android:src="@drawable/image"
+            android:src="@drawable/img_default"
             android:id="@+id/card_4">
         </ImageView>
         <ImageView
@@ -66,7 +66,7 @@
             android:layout_marginLeft="10dp"
             android:layout_marginTop="10dp"
             android:layout_marginBottom="10dp"
-            android:src="@drawable/image"
+            android:src="@drawable/img_default"
             android:id="@+id/card_5">
         </ImageView>
         <ImageView
@@ -76,7 +76,7 @@
             android:layout_marginLeft="10dp"
             android:layout_marginTop="10dp"
             android:layout_marginBottom="10dp"
-            android:src="@drawable/image"
+            android:src="@drawable/img_default"
             android:id="@+id/card_6">
 
         </ImageView>
@@ -95,7 +95,7 @@
             android:layout_marginLeft="10dp"
             android:layout_marginTop="10dp"
             android:layout_marginBottom="10dp"
-            android:src="@drawable/image"
+            android:src="@drawable/img_default"
             android:id="@+id/card_7">
 
         </ImageView>
@@ -106,7 +106,7 @@
             android:layout_marginLeft="10dp"
             android:layout_marginTop="10dp"
             android:layout_marginBottom="10dp"
-            android:src="@drawable/image"
+            android:src="@drawable/img_default"
             android:id="@+id/card_8">
 
         </ImageView>
@@ -117,7 +117,7 @@
             android:layout_marginLeft="10dp"
             android:layout_marginTop="10dp"
             android:layout_marginBottom="10dp"
-            android:src="@drawable/image"
+            android:src="@drawable/img_default"
             android:id="@+id/card_9">
 
         </ImageView>
@@ -136,7 +136,7 @@
             android:layout_marginLeft="10dp"
             android:layout_marginTop="10dp"
             android:layout_marginBottom="10dp"
-            android:src="@drawable/image"
+            android:src="@drawable/img_default"
             android:id="@+id/card_10">
 
         </ImageView>
@@ -147,7 +147,7 @@
             android:layout_marginLeft="10dp"
             android:layout_marginTop="10dp"
             android:layout_marginBottom="10dp"
-            android:src="@drawable/image"
+            android:src="@drawable/img_default"
             android:id="@+id/card_11">
 
         </ImageView>
@@ -158,7 +158,7 @@
             android:layout_marginLeft="10dp"
             android:layout_marginTop="10dp"
             android:layout_marginBottom="10dp"
-            android:src="@drawable/image"
+            android:src="@drawable/img_default"
             android:id="@+id/card_12">
 
         </ImageView>
